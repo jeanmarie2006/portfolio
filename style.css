@@ -349,7 +349,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .contact__title { font-size: clamp(44px, 9.5vw, 132px); font-weight: 800; letter-spacing: -.05em; line-height: .95; margin: 6px 0 26px; }
 .contact__text { color: #b8c4ff; font-size: 1.15rem; margin-bottom: 30px; }
 .contact__actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-.contact__list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: clamp(32px, 6vw, 64px); text-align: left; }
+.contact__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: clamp(32px, 6vw, 64px); text-align: left; }
 .contact__list li { padding: 16px 18px; border-radius: 18px; background: rgba(255, 255, 255, .05); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .contact__list span { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--c1); }
 .contact__list a, .contact__list b { font-weight: 700; overflow-wrap: anywhere; }
