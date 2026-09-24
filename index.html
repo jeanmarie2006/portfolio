@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sedjame Vianney — Développeur Web Junior</title>
+<meta name="description" content="Portfolio de Sedjame Vianney, développeur web junior à Cotonou et Calavi (Bénin) : HTML, CSS, JavaScript, React, PHP, Laravel, MySQL.">
+<meta property="og:title" content="Sedjame Vianney — Développeur Web Junior">
+<meta property="og:description" content="Applications et sites web modernes : React, Laravel, PHP, MySQL. Basé à Cotonou et Calavi, Bénin.">
+<meta property="og:image" content="assets/photo.jpg">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2305070f'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='url(%23g)'%3E%26lt%3B/%26gt%3B%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__status" href="#contact"><i></i><span>Disponible pour un stage ou un premier poste</span></a>
+  <nav class="nav__links" id="navLinks" aria-label="Navigation principale">
+    <a href="#apropos">À propos</a>
+    <a href="#stack">Stack</a>
+    <a href="#projets">Projets <sup>6</sup></a>
+    <a href="#services">Services</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn--grad nav__cta" href="#contact">Parlons-en <span aria-hidden="true">↗</span></a>
+  <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"><i class="orb orb--1"></i><i class="orb orb--2"></i><i class="orb orb--3"></i></div>
+
+  <div class="hero__name" aria-hidden="true">
+    <span class="hero__first">SEDJAME</span>
+    <span class="hero__last">VIANNEY</span>
+  </div>
+  <h1 class="sr-only">Sedjame Vianney, développeur web junior</h1>
+
+  <div class="hero__stage">
+    <figure class="hero__photo">
+      <span class="hero__ring" aria-hidden="true"></span>
+      <img src="assets/photo.jpg" alt="Portrait de Sedjame Vianney" width="900" height="1125" fetchpriority="high">
+    </figure>
+
+    <!-- logos de technologies qui flottent autour de la photo -->
+    <ul class="float" aria-hidden="true">
+      <li style="--x:-2%;--y:6%;--d:0s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""><b>React</b></li>
+      <li style="--x:82%;--y:2%;--d:.8s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt=""><b>Laravel</b></li>
+      <li style="--x:-12%;--y:44%;--d:1.6s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""><b>JavaScript</b></li>
+      <li style="--x:90%;--y:40%;--d:.4s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt=""><b>PHP</b></li>
+      <li style="--x:-6%;--y:80%;--d:1.2s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""><b>MySQL</b></li>
+      <li style="--x:84%;--y:78%;--d:2s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""><b>HTML5</b></li>
+    </ul>
+  </div>
+
+  <div class="hero__left">
+    <p class="eyebrow"><span class="pin"></span>Cotonou · Calavi · Bénin</p>
+    <h2 class="hero__role"><span id="typed">Développeur Web Junior</span><i class="caret" aria-hidden="true"></i></h2>
+    <p class="hero__text">Je crée des sites et des applications web modernes, de l'interface jusqu'à la base de données : React, PHP, Laravel et MySQL. J'aime transformer une idée en outil concret, clair et utile.</p>
+    <div class="hero__cta">
+      <a class="btn btn--grad" href="#projets">Voir mes projets <span aria-hidden="true">↓</span></a>
+      <a class="btn btn--line" href="assets/CV_Sedjame_Vianney.pdf" download>Mon CV <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero__right">
+    <div class="code" aria-hidden="true">
+      <div class="code__bar"><i></i><i></i><i></i><span>sedjame.js</span></div>
+<pre><code><span class="k">const</span> <span class="v">sedjame</span> <span class="o">=</span> {
+  <span class="p">role</span>: <span class="s">"Développeur Web Junior"</span>,
+  <span class="p">stack</span>: [<span class="s">"React"</span>, <span class="s">"Laravel"</span>, <span class="s">"PHP"</span>, <span class="s">"MySQL"</span>],
+  <span class="p">lieu</span>: <span class="s">"Cotonou · Calavi, Bénin"</span>,
+  <span class="p">disponible</span>: <span class="b">true</span>,
+};</code></pre>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/jean-marie-vianney-sedjame-5515733a5" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://wa.me/2290129179162" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a></li>
+    </ul>
+  </div>
+
+  <a class="scroll" href="#apropos" aria-label="Descendre"><span></span></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML5</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS3</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="">React.js</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="">PHP</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="">Laravel</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="">MySQL</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">Git</span>
+    <span><img class="inv" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="">GitHub</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML5</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS3</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="">React.js</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="">PHP</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="">Laravel</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="">MySQL</span>
+    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">Git</span>
+    <span><img class="inv" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="">GitHub</span>
+  </div>
+</div>
+
+<!-- ============ À PROPOS ============ -->
+<section class="section about" id="apropos">
+  <div class="section__head">
+    <p class="eyebrow">À propos</p>
+    <h2 class="title">/Qui suis-<span class="grad">je</span></h2>
+  </div>
+  <div class="about__grid">
+    <div class="about__text reveal">
+      <p>Développeur web junior, je maîtrise <strong>HTML, CSS, JavaScript, PHP, React, Laravel et MySQL</strong>. Je suis motivé à mettre ces compétences au service de projets web concrets, et passionné par la création d'applications modernes et fonctionnelles.</p>
+      <p>Formé à l'<strong>intelligence artificielle</strong> avec Google Career Certificates, je m'intéresse à son intégration dans les applications web. Mon parcours en gestion m'aide aussi à comprendre les besoins réels des entreprises et des utilisateurs.</p>
+      <a class="link-arrow" href="assets/CV_Sedjame_Vianney.pdf" download>Télécharger mon CV (PDF) <span aria-hidden="true">↓</span></a>
+    </div>
+    <dl class="facts reveal">
+      <div><dt>Basé à</dt><dd>Cotonou et Calavi, Bénin</dd></div>
+      <div><dt>Formation</dt><dd>Développement web — EIG Bénin</dd></div>
+      <div><dt>Langues</dt><dd>Français, Fon, Anglais (débutant)</dd></div>
+      <div><dt>Centres d'intérêt</dt><dd>Web, IA, technologies numériques, sport, jeux vidéo, lecture</dd></div>
+    </dl>
+  </div>
+  <ul class="stats reveal">
+    <li><b data-count="6">0</b><span>projets réalisés</span></li>
+    <li><b data-count="2">0</b><span>certifications</span></li>
+    <li><b data-count="2">0</b><span>hackathons en équipe</span></li>
+    <li><b data-count="9">0</b><span>technologies maîtrisées</span></li>
+  </ul>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section stack" id="stack">
+  <div class="section__head">
+    <p class="eyebrow">Technologies</p>
+    <h2 class="title">/Ma <span class="grad">stack</span></h2>
+  </div>
+
+  <div class="stack__group reveal">
+    <h3><span class="tag tag--a">Front-end</span></h3>
+    <ul class="tiles">
+      <li class="tile" style="--c:#e34f26" data-level="90"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""><b>HTML5</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#1572b6" data-level="85"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""><b>CSS3</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#f7df1e" data-level="75"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""><b>JavaScript</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#61dafb" data-level="72"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""><b>React.js</b><span class="lvl"><i></i></span></li>
+    </ul>
+  </div>
+
+  <div class="stack__group reveal">
+    <h3><span class="tag tag--b">Back-end &amp; base de données</span></h3>
+    <ul class="tiles">
+      <li class="tile" style="--c:#8892bf" data-level="70"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt=""><b>PHP</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#ff2d20" data-level="65"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt=""><b>Laravel</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#00b3e6" data-level="70"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""><b>MySQL</b><span class="lvl"><i></i></span></li>
+    </ul>
+  </div>
+
+  <div class="stack__group reveal">
+    <h3><span class="tag tag--c">Outils &amp; déploiement</span></h3>
+    <ul class="tiles">
+      <li class="tile" style="--c:#f05032" data-level="72"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""><b>Git</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#c9d1d9" data-level="72"><img class="inv" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""><b>GitHub</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#007acc" data-level="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""><b>VS Code</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#f24e1e" data-level="55"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt=""><b>Figma</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#00c7b7" data-level="70"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt=""><b>Netlify</b><span class="lvl"><i></i></span></li>
+      <li class="tile" style="--c:#ffffff" data-level="70"><img class="inv" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt=""><b>Vercel</b><span class="lvl"><i></i></span></li>
+    </ul>
+  </div>
+
+  <div class="stack__group reveal">
+    <h3><span class="tag tag--d">Intelligence artificielle</span></h3>
+    <ul class="tiles">
+      <li class="tile tile--ai" style="--c:#a78bfa" data-level="60"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l1.8 5.2L19 9l-5.200 1.800L12 16l-1.800-5.200L5 9l5.200-1.800L12 2zm7 11l.9 2.600L22.500 16.500l-2.600.9L19 20l-.9-2.600-2.600-.9 2.600-.9L19 13zM6 14l.9 2.600 2.600.9-2.600.9L6 21l-.9-2.600L2.500 17.500l2.600-.9L6 14z"/></svg><b>IA</b><span class="lvl"><i></i></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section class="section projects" id="projets">
+  <div class="section__head">
+    <p class="eyebrow">Portfolio</p>
+    <h2 class="title">/Mes <span class="grad">projets</span></h2>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filtrer les projets">
+    <button class="chip is-active" data-filter="all" aria-pressed="true">Tous</button>
+    <button class="chip" data-filter="online" aria-pressed="false">En ligne</button>
+    <button class="chip" data-filter="hackathon" aria-pressed="false">Hackathons</button>
+    <button class="chip" data-filter="perso" aria-pressed="false">Personnels</button>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <article class="card reveal" data-cat="online hackathon" style="--a:#facc15;--b:#38bdf8">
+      <a class="card__cover" href="https://schoolpay.wuaze.com" target="_blank" rel="noopener" aria-label="Ouvrir SchoolPay">
+        <img src="assets/schoolpay.jpg" alt="Page d'accueil de SchoolPay" loading="lazy" width="960" height="600">
+        <span class="card__go" aria-hidden="true">↗</span>
+      </a>
+      <div class="card__body">
+        <div class="card__meta"><span>Projet d'équipe</span><span>EIG Bénin</span></div>
+        <h3>SchoolPay — Paiement scolaire</h3>
+        <p>Inscription en ligne et paiement des frais de scolarité via MTN Mobile Money, avec création de compte, connexion et suivi en temps réel.</p>
+        <ul class="tags"><li>PHP</li><li>Mobile Money</li><li>Suivi des paiements</li></ul>
+        <div class="card__links"><a class="is-main" href="https://schoolpay.wuaze.com" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+
+    <article class="card reveal" data-cat="online perso" style="--a:#34d399;--b:#22d3ee">
+      <a class="card__cover" href="https://optiniel-services-sedjamevianney.vercel.app" target="_blank" rel="noopener" aria-label="Ouvrir Optiniel Services">
+        <img src="assets/optiniel.jpg" alt="Page d'accueil du site Optiniel Services" loading="lazy" width="960" height="600">
+        <span class="card__go" aria-hidden="true">↗</span>
+      </a>
+      <div class="card__body">
+        <div class="card__meta"><span>Site vitrine</span><span>Vercel</span></div>
+        <h3>Optiniel Services — Imprimerie</h3>
+        <p>Site d'une imprimerie de Cotonou : services (flyers, cartes de visite, documents), parcours en 3 étapes, horaires et formulaire de demande de devis.</p>
+        <ul class="tags"><li>Site vitrine</li><li>Formulaire de devis</li><li>Responsive</li></ul>
+        <div class="card__links"><a class="is-main" href="https://optiniel-services-sedjamevianney.vercel.app" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">↗</span></a><a href="https://github.com/jeanmarie2006/optiniel-services" target="_blank" rel="noopener">Code GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+
+    <article class="card reveal" data-cat="perso" style="--a:#38bdf8;--b:#818cf8">
+      <a class="card__cover" href="https://github.com/jeanmarie2006/skybook" target="_blank" rel="noopener" aria-label="Voir le code de Skybook sur GitHub">
+        <img src="assets/skybook.jpg" alt="Page d'accueil de Skybook : « Le monde est plus proche que jamais » avec le moteur de recherche de vols" loading="lazy" width="960" height="582">
+        <span class="card__go" aria-hidden="true">↗</span>
+      </a>
+      <div class="card__body">
+        <div class="card__meta"><span>Application web</span><span>Laravel 12</span></div>
+        <h3>Skybook — Réservation de vols</h3>
+        <p>Recherche de vols avec filtres, réservation en 3 étapes (voyageurs, sièges et options, paiement simulé), billet, et back-office : vols, compagnies, aéroports, tarifs, promotions, remboursements et rapports.</p>
+        <ul class="tags"><li>Laravel 12</li><li>MySQL</li><li>Back-office admin</li></ul>
+        <div class="card__links"><a class="is-main" href="https://github.com/jeanmarie2006/skybook" target="_blank" rel="noopener">Voir le code sur GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+
+    <article class="card reveal" data-cat="hackathon" style="--a:#f59e0b;--b:#84cc16">
+      <div class="card__cover">
+        <img src="assets/esc.jpg" alt="Aperçu du site de l'École de Savonnerie et de Cosmétique" loading="lazy" width="716" height="451">
+      </div>
+      <div class="card__body">
+        <div class="card__meta"><span>Hackathon · Équipe</span><span>Septembre 2026</span></div>
+        <h3>ESC — École de Savonnerie &amp; Cosmétique</h3>
+        <p>Site professionnel pour présenter les filières, les témoignages et les résultats de l'école, pensé pour présenter et vendre des formations en ligne.</p>
+        <ul class="tags"><li>Site web</li><li>Expérience utilisateur</li><li>Travail d'équipe</li></ul>
+      </div>
+    </article>
+
+    <article class="card reveal" data-cat="hackathon" style="--a:#61dafb;--b:#a78bfa">
+      <div class="card__cover mock mock--akili" role="img" aria-label="Illustration du projet Akili Script Toolkit">
+        <div class="mock__bar"><i></i><i></i><i></i><span>akili · connexion</span></div>
+        <div class="mock__body mock__body--login">
+          <div class="mock__logo">&lt;A/&gt;</div>
+          <div class="mock__field"></div>
+          <div class="mock__field"></div>
+          <div class="mock__btn">Se connecter</div>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta"><span>Hackathon · Équipe</span><span>Avril 2026</span></div>
+        <h3>Akili Script Toolkit</h3>
+        <p>Landing page et page de connexion en React à partir de maquettes UI/UX : interfaces responsives, pixel-perfect, conformes WCAG AA, avec une architecture réutilisable.</p>
+        <ul class="tags"><li>React</li><li>GitHub</li><li>UI/UX</li><li>WCAG AA</li></ul>
+      </div>
+    </article>
+
+    <article class="card reveal" data-cat="perso online" style="--a:#d4b06a;--b:#f59e0b">
+      <a class="card__cover" href="https://github.com/jeanmarie2006/jmv-auto" target="_blank" rel="noopener" aria-label="Voir le code de JMV Auto sur GitHub">
+        <img src="assets/jmv.jpg" alt="Page d'accueil de JMV Auto : « Le luxe automobile, sans compromis » avec la recherche de véhicules" loading="lazy" width="960" height="545">
+        <span class="card__go" aria-hidden="true">↗</span>
+      </a>
+      <div class="card__body">
+        <div class="card__meta"><span>Site de concession</span><span>Next.js</span></div>
+        <h3>JMV Auto — Concession automobile</h3>
+        <p>Site d'une concession automobile premium à Cotonou : catalogue de véhicules, recherche par marque et budget, réservation, formulaire de contact, API et page d'administration.</p>
+        <ul class="tags"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>API</li></ul>
+        <div class="card__links"><a class="is-main" href="https://github.com/jeanmarie2006/jmv-auto" target="_blank" rel="noopener">Voir le code sur GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="section__head">
+    <p class="eyebrow">Ce que je fais</p>
+    <h2 class="title">/<span class="grad">Services</span></h2>
+  </div>
+  <div class="acc">
+    <details class="acc__item" name="svc" open>
+      <summary><span class="acc__n">01</span><span class="acc__t">Développement web</span><span class="acc__i" aria-hidden="true"></span></summary>
+      <p>Sites vitrines, plateformes de commandes et applications sur mesure, rapides, responsives et faciles à faire évoluer. HTML, CSS, JavaScript et React côté interface.</p>
+    </details>
+    <details class="acc__item" name="svc">
+      <summary><span class="acc__n">02</span><span class="acc__t">Back-end &amp; bases de données</span><span class="acc__i" aria-hidden="true"></span></summary>
+      <p>Applications PHP et Laravel avec authentification, gestion des rôles, tableaux de bord administrateur et bases MySQL bien structurées.</p>
+    </details>
+    <details class="acc__item" name="svc">
+      <summary><span class="acc__n">03</span><span class="acc__t">Interfaces &amp; expérience utilisateur</span><span class="acc__i" aria-hidden="true"></span></summary>
+      <p>Transformation de maquettes UI/UX en interfaces fidèles, accessibles (WCAG AA) et agréables à utiliser, sur mobile comme sur ordinateur.</p>
+    </details>
+    <details class="acc__item" name="svc">
+      <summary><span class="acc__n">04</span><span class="acc__t">Intégration de l'IA</span><span class="acc__i" aria-hidden="true"></span></summary>
+      <p>Des fonctionnalités intelligentes et des automatisations intégrées à vos applications web, à partir de ma formation Google Career Certificates en intelligence artificielle.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ PARCOURS ============ -->
+<section class="section path" id="parcours">
+  <div class="path__side">
+    <p class="eyebrow">Parcours</p>
+    <h2 class="title">/<span class="grad">Parcours</span></h2>
+    <p class="path__intro">Formations, certifications et expériences qui construisent mon profil de développeur web.</p>
+    <ul class="certs">
+      <li><b>OpenClassrooms</b><span>Développement web · 2026</span></li>
+      <li><b>Google Career Certificates</b><span>Intelligence artificielle · 2025</span></li>
+    </ul>
+  </div>
+  <ol class="timeline">
+    <li class="reveal"><time>2026</time><div><h3>Formation en développement web</h3><p>EIG Bénin — HTML, CSS, JavaScript, PHP, React.js, Laravel.</p></div></li>
+    <li class="reveal"><time>2026</time><div><h3>Hackathons en équipe</h3><p>Akili Script Toolkit (avril) et École de Savonnerie &amp; Cosmétique (septembre).</p></div></li>
+    <li class="reveal"><time>2025</time><div><h3>Certification Google Career Certificates</h3><p>Intelligence artificielle.</p></div></li>
+    <li class="reveal"><time>2025</time><div><h3>BAC+1 — Gestion</h3><p>Université d'Abomey-Calavi (UAC), FASEG — Faculté des Sciences Économiques et de Gestion.</p></div></li>
+    <li class="reveal"><time>Stage</time><div><h3>Assistant comptable — 2 mois</h3><p>Cabinet d'expertise comptable EXCCA, Cotonou : saisie comptable, déclarations, classement des documents.</p></div></li>
+    <li class="reveal"><time>2024</time><div><h3>Baccalauréat G2</h3><p>Collège Catholique Père Aupiais, Cotonou.</p></div></li>
+  </ol>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <p class="eyebrow eyebrow--light"><span class="dotlive"></span> Disponible pour un stage ou un premier poste</p>
+    <h2 class="contact__title">Un projet <span class="grad">en tête</span>&nbsp;?</h2>
+    <p class="contact__text">Parlons-en. Écrivez-moi et je vous réponds rapidement.</p>
+    <div class="contact__actions">
+      <a class="btn btn--grad btn--lg" href="https://wa.me/2290129179162" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a>
+      <a class="btn btn--line btn--lg" href="mailto:sedjamevianney906@gmail.com">sedjamevianney906@gmail.com</a>
+    </div>
+    <ul class="contact__list">
+      <li><span>Téléphone</span><a href="tel:+2290129179162">+229 01 29 17 91 62</a></li>
+      <li><span>Ville</span><b>Cotonou et Calavi, Bénin</b></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jean-marie-vianney-sedjame-5515733a5" target="_blank" rel="noopener">Jean-Marie Vianney Sedjame</a></li>
+      <li><span>CV</span><a href="assets/CV_Sedjame_Vianney.pdf" download>Télécharger (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Sedjame Vianney · Fait avec HTML, CSS et JavaScript</p>
+  <a href="#top">Retour en haut ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
