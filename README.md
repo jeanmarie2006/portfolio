@@ -6,3 +6,5 @@ Portfolio de développeur web junior (Cotonou et Calavi, Bénin) : HTML, CSS, Ja
 - `assets/` : photo, captures des projets et CV (PDF)
 
 Pour l'ouvrir : double-cliquer sur `index.html`. Pour le mettre en ligne : Netlify ou Vercel (glisser le dossier).
+
+**En ligne : https://sedjame-vianney.vercel.app**
