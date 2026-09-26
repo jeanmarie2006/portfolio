@@ -409,3 +409,9 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .reveal { opacity: 1; transform: none; }
   .lvl i { width: var(--w); }
 }
+
+/* Icône d'application posée sur la vignette */
+.card__icon { position: absolute; left: 16px; bottom: 16px; z-index: 4; width: 52px; height: 52px; border-radius: 14px; box-shadow: 0 10px 28px rgba(0, 0, 0, .45), 0 0 0 2px rgba(255, 255, 255, .85); }
+
+.apps-note { margin: 0 auto 28px; max-width: 760px; text-align: center; color: var(--muted, #9aa4bf); font-size: .95rem; }
+.apps-note b { color: #fff; }
