@@ -421,5 +421,6 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .apps-banner__go { font-weight: 700; font-size: .92rem; white-space: nowrap; }
 
 /* lien vers le portfolio des applications web */
+.nav__links a { white-space: nowrap; }
 .nav__links a.nav__ext { color: #c4b5fd; }
 .nav__links a.nav__ext:hover { color: #fff; }
